@@ -1,7 +1,7 @@
 # Principal Component Analysis
 A project regarding the concept of Principal Component Analysis (PCA), a method for reducing the dimension of massive data sets onto a projected vector  
 
-Even if you aren't a mathmetician or data scientist, you've probably encountered some sort of visualized data set, one that was much too complicated to make much sense of. Yet, the idea of **Principal Component Analysis** is to condense those data points into a simple array of understandable info. An example can be used with **vector projections** which projects vectors of a certain dimension onto a 2D-space "direction" line vector. This line would include a projection, in the sense of assigning a "score" or "grade," to the data point, thus helping to better visualize the position of the data point in relation to the rest of the set. Vector Projection does not represent the value of the data point as much as it offers a relationship with other data points in the set.
+Even if you aren't a mathmetician or data scientist, you've probably encountered some sort of visualized data set, one that was much too complicated to make much sense of. Yet, the idea of **Principal Component Analysis** is to condense those data points into a simple array of understandable information. An example can be used with **vector projections** which projects vectors of a certain dimension onto a 2D-space "direction" line vector. This line would include a projection, in the sense of assigning a "score" or "grade," to the data point, thus helping to better visualize the position of the data point in relation to the rest of the set. Vector Projection does not represent the value of the data point as much as it offers a relationship with other data points in the set.
 
 
 # Senator Voting Data (Example)
@@ -45,13 +45,13 @@ Freiburg = [25.554123, 77.339895, 7.965502];
 Karlsruhe = [19.780618, 76.517790, 6.304491];
 ```
 <p align="center">Code Snippet 1 - City Weather Data</p>
+<br>
 I chose a random line vector that made sense in the context of the data:
 <br>
 
 ```python
 LineVector = [40, 120, 0];
 ```
-
 By using the vector projection formula, by multiplying the direction vector with the data vector, dividing by the magnitude of the direction vector, and multiplying by the direction vector, I am able to calculate each city vector's projection onto the direction vector using the function:
 <br>
 
@@ -64,6 +64,7 @@ def projection(vector):
     return projvector;
 ```
 <p align="center">Code Snippet 2 - Vector Projection Function</p>
+<br>
 From there, I plotted those points onto the direction vector in 3D space to achieve this visualization:
 <br><br>
 
