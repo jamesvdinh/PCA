@@ -67,7 +67,9 @@ def projection(vector):
 From there, I plotted those points onto the direction vector in 3D space to achieve this visualization:
 <br><br>
 
-![City Projection](CityProjection.png)
+<p align="center">
+<img src="CityProjection.png" alt="City Projection">
+    </p>
 <p align="center">Fig 3 - Projection of data points onto the direction vector</p>
 <br>
 
