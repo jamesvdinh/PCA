@@ -25,7 +25,7 @@ By using an equation which takes the summation of all the votes of a specific se
 <p align="center">Fig 2 - Projection along a mean-zero direction</p>
 
 
-# Project
+# Program
 Using Python and the MatPlotLib library, I created a program that took vectors, calculated their projections, and plotted those projections on a predetermined line.  
 
 Below is the weather data for 12 cities in Germany, with city[0] being the temperature, city[1] being the humidity, and city[2] being the wind speed for a particular day.
