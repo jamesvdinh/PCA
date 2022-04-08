@@ -19,7 +19,7 @@ By using an equation which takes the summation of all the votes of a specific se
 | --- | --- | --- |
 | -1 | 1 | 0 |
 
-<br><br>
+<br>
 
 ![Senator Projections](SenatorProjection.png)
 <p align="center">Fig 2 - Projection along a mean-zero direction</p>
@@ -69,6 +69,6 @@ From there, I plotted those points onto the direction vector in 3D space to achi
 
 ![City Projection](CityProjection)
 <p align="center">Fig 3 - Projection of data points onto the direction vector</p>
+<br>
 
-
-Main Program: WeatherData.ipynb
+### Main Program: WeatherData.ipynb
