@@ -65,7 +65,7 @@ def projection(vector):
 ```
 <p align="center">Code Snippet 2 - Vector Projection Function</p>
 <br>
-From there, I plotted those points onto the direction vector in 3D space to achieve this visualization:
+From there, I plotted those points onto the direction vector in 3D space to achieve this visualization (Blue -> City Weather Data, Red -> Projected Vectors):
 <br><br>
 
 <p align="center">
