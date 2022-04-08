@@ -52,7 +52,7 @@ I chose a random line vector that made sense in the context of the data:
 ```python
 LineVector = [40, 120, 0];
 ```
-By using the vector projection formula, by multiplying the direction vector with the data vector, dividing by the magnitude of the direction vector, and multiplying by the direction vector, I am able to calculate each city vector's projection onto the direction vector using the function:
+By using the vector projection formula, by multiplying the direction vector with the data vector, dividing by the magnitude of the direction vector, and multiplying by the direction vector squared (proj = (a*v / ||v||^2)v, I am able to calculate each city vector's projection onto the direction vector using the function:
 <br>
 
 ```python
