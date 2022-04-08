@@ -4,8 +4,8 @@ A project regarding the concept of Principal Component Analysis (PCA), a method 
 Even if you aren't a mathmetician or data scientist, you've probably encountered some sort of visualized data set, one that was much too complicated to synthesize. Yet, the idea of **Principal Component Analysis** is to condense those data points into a simple array of understandable information. An example can be used with **vector projections** which projects vectors of a certain dimension onto a 2D-space "direction" line vector. This line would include a projection, in the sense of assigning a "score" or "grade," to the data point, thus helping to better visualize the position of the data point in relation to the rest of the set. Vector Projection does not represent the value of the data point as much as it offers a relationship with other data points in the set.
 
 ### Vector Projection
-To find a projected vector, the projection must be on the direction line closest to the original vector such that the point is orthogonal (or at a right angle) with the original vector. A formula can be derived from this theory: <br><br>
-<img src="http://www.sciweavers.org/tex2img.php?eq=proj_%7Bv%7Da%20%3D%20%20%5Cfrac%7Ba%20%5Cbullet%20v%7D%7B%7C%7Cv%7C%7C%5E%7B2%7D%7Dv%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="proj_{v}a =  \frac{a \bullet v}{||v||^{2}}v " width="137" height="43" />
+To find a projected vector, the projection must be on the direction line closest to the original vector such that the point is orthogonal (or at a right angle) with the original vector. An equation can be derived from this theory: <br><br>
+![Projection Equation](ProjectionEquation.png)
 
 
 # Senator Voting Data (Example)
@@ -56,7 +56,7 @@ I chose a random line vector that made sense in the context of the data:
 ```python
 LineVector = [40, 120, 0];
 ```
-By using the vector projection formula, by multiplying the direction vector with the data vector, dividing by the magnitude of the direction vector, and multiplying by the direction vector squared (<img src="http://www.sciweavers.org/tex2img.php?eq=proj_%7Bv%7Da%20%3D%20%20%5Cfrac%7Ba%20%5Cbullet%20v%7D%7B%7C%7Cv%7C%7C%5E%7B2%7D%7Dv%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="proj_{v}a =  \frac{a \bullet v}{||v||^{2}}v " width="100" height="35" />), I am able to calculate each city vector's projection onto the direction vector using the function:
+By using the vector projection formula, by multiplying the direction vector with the data vector, dividing by the magnitude of the direction vector, and multiplying by the direction vector squared (![Projection Equation](ProjectionEquation.png)), I am able to calculate each city vector's projection onto the direction vector using the function:
 <br>
 
 ```python
