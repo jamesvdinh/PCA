@@ -5,7 +5,7 @@ Even if you aren't a mathmetician or data scientist, you've probably encountered
 
 ### Vector Projection
 To find a projected vector, the projection must be on the direction line closest to the original vector such that the point is orthogonal (or at a right angle) with the original vector. An equation can be derived from this theory: <br><br>
-![Projection Equation](ProjectionEquation.png)
+<img src="ProjectionEquation.png" alt="Projection Equation" width="150" height="50"/>
 
 
 # Senator Voting Data (Example)
@@ -56,7 +56,7 @@ I chose a random line vector that made sense in the context of the data:
 ```python
 LineVector = [40, 120, 0];
 ```
-By using the vector projection formula, by multiplying the direction vector with the data vector, dividing by the magnitude of the direction vector, and multiplying by the direction vector squared (![Projection Equation](ProjectionEquation.png)), I am able to calculate each city vector's projection onto the direction vector using the function:
+By using the vector projection formula, by multiplying the direction vector with the data vector, dividing by the magnitude of the direction vector, and multiplying by the direction vector squared (<img src="ProjectionEquation.png" alt="Projection Equation" align="center" width="137" height="43"/>), I am able to calculate each city vector's projection onto the direction vector using the function:
 <br>
 
 ```python
