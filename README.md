@@ -3,6 +3,10 @@ A project regarding the concept of Principal Component Analysis (PCA), a method 
 
 Even if you aren't a mathmetician or data scientist, you've probably encountered some sort of visualized data set, one that was much too complicated to synthesize. Yet, the idea of **Principal Component Analysis** is to condense those data points into a simple array of understandable information. An example can be used with **vector projections** which projects vectors of a certain dimension onto a 2D-space "direction" line vector. This line would include a projection, in the sense of assigning a "score" or "grade," to the data point, thus helping to better visualize the position of the data point in relation to the rest of the set. Vector Projection does not represent the value of the data point as much as it offers a relationship with other data points in the set.
 
+### Vector Projection
+To find a projected vector, the projection must be on the direction line closest to the original vector such that the point is orthogonal (or at a right angle) with the original vector. A formula can be derived from this theory: <br><br>
+<img src="http://www.sciweavers.org/tex2img.php?eq=proj_%7Bv%7Da%20%3D%20%20%5Cfrac%7Ba%20%5Cbullet%20v%7D%7B%7C%7Cv%7C%7C%5E%7B2%7D%7Dv%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="proj_{v}a =  \frac{a \bullet v}{||v||^{2}}v " width="137" height="43" />
+
 
 # Senator Voting Data (Example)
 Placing this into perspective, we can better understand how much a certain selection of points in a set are skewed towards one quality or the other, such as in a relation of sentator voting patterns. The image below represents a matrix of all the votes of US Senators in from the 2004-2006 term of 645 bills. Each row represents the votes of a single Senator, and each column represents the vote distribution of a single bill. The __Dark__ areas represent 'Nay' on a bill while the __Blank__ areas reprsent 'Yay' with __Gray__ representing an abstain.  
@@ -52,7 +56,7 @@ I chose a random line vector that made sense in the context of the data:
 ```python
 LineVector = [40, 120, 0];
 ```
-By using the vector projection formula, by multiplying the direction vector with the data vector, dividing by the magnitude of the direction vector, and multiplying by the direction vector squared (proj = (a*v / ||v||^2)v, I am able to calculate each city vector's projection onto the direction vector using the function:
+By using the vector projection formula, by multiplying the direction vector with the data vector, dividing by the magnitude of the direction vector, and multiplying by the direction vector squared (<img src="http://www.sciweavers.org/tex2img.php?eq=proj_%7Bv%7Da%20%3D%20%20%5Cfrac%7Ba%20%5Cbullet%20v%7D%7B%7C%7Cv%7C%7C%5E%7B2%7D%7Dv%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="proj_{v}a =  \frac{a \bullet v}{||v||^{2}}v " width="100" height="35" />), I am able to calculate each city vector's projection onto the direction vector using the function:
 <br>
 
 ```python
@@ -65,7 +69,7 @@ def projection(vector):
 ```
 <p align="center">Code Snippet 2 - Vector Projection Function</p>
 <br>
-From there, I plotted those points onto the direction vector in 3D space to achieve this visualization (Blue -> City Weather Data, Red -> Projected Vectors):
+From there, I plotted those points onto the direction vector in 3D space to achieve this visualization (<span style="color:blue">Blue</span> -> City Weather Data, <span style="color:red">Red</span> -> Projected Vectors):
 <br><br>
 
 <p align="center">
@@ -73,5 +77,7 @@ From there, I plotted those points onto the direction vector in 3D space to achi
     </p>
 <p align="center">Fig 3 - Projection of data points onto the direction vector</p>
 <br>
+Using this model, I can derive which city's weather is most deviated from the national average. The projections furthest from the mean would indicate an above or below average deviation from their counterparts, proving useful in determining standard deviation and relationships between cities based on this data.
+<br><br>
 
 ### Main Program: WeatherData.ipynb
