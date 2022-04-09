@@ -9,7 +9,7 @@ To find a projected vector, the projection must be on the direction line closest
 
 
 # Senator Voting Data (Example)
-Placing this into perspective, we can better understand how much a certain selection of points in a set are skewed towards one quality or the other, such as in a relation of sentator voting patterns. The image below represents a matrix of all the votes of US Senators in from the 2004-2006 term of 645 bills. Each row represents the votes of a single Senator, and each column represents the vote distribution of a single bill. The __Dark__ areas represent 'Nay' on a bill while the __Blank__ areas reprsent 'Yay' with __Gray__ representing an abstain.  
+Placing this into perspective, we can better understand how much a certain selection of points in a set are skewed towards one quality or the other, such as in a relation of sentator voting patterns. The image below represents a matrix of all the votes of US Senators in from the 2004-2006 term of 645 bills. Each row represents the votes of a single Senator, and each column represents the vote distribution of a single bill. The __Dark__ areas represent 'Nay' on a bill while the __Light__ areas reprsent 'Yay' with __Gray__ representing an abstain.  
 
 From the chart below, the data isn't very useful in determining the political biases of senators on a specific scale. Thus, we can use PCA projection to simplfy these data points into a more concise model.  
 
